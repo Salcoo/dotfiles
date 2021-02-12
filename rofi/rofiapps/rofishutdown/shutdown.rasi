@@ -1,0 +1,80 @@
+
+* {
+
+icon-font: "Material Design Icons 32";
+layout: horizontal;
+}
+
+window {
+  width: 20%;
+  height: 13%;
+  anchor: south;
+  location:north;
+  x-offset: 35%;
+  y-offset: 20%;
+  border: 5px 2px 2px 2px;
+  border-radius: 5px 5px 20px 20px;
+  border-color:  #000000;
+  background-color: #00000000;
+padding: 15px;
+
+
+}
+
+* {
+background-color:   #141720;
+text-color: #030b11;
+font: @icon-font;
+border: 0px 0px 0px 0px;
+padding: 3px;
+border-radius: 0px 0px 20px 20px;
+border-color:  #666666;
+}
+
+horibox {
+  children: [ listview ];
+}
+
+
+
+listview {
+  
+fixed-height: 0;
+border: 10px 10px 10px 10px;
+border-color:   #141720;
+scrollbar: false;
+padding: 15px 0px 0px 0px  ;
+background-color: #141720;
+
+}
+
+
+#window {
+  padding: @menu-window-padding;
+  children: [ inputbar, horibox ];
+
+}
+
+#inputbar {
+  enabled: false;
+}
+
+element {
+text-color:  #4db5bb;
+border: 0px;
+}
+
+
+element selected.normal {
+    background-color:  #141720;
+    text-color:      #c577d7;
+  
+}
+
+
+
+
+
+
+
+

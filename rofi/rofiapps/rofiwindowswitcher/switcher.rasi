@@ -1,0 +1,71 @@
+
+configuration {
+    modi: "window";   
+    show-icons: true;
+    window-format: "[{w}---{c}] --{t}";
+    icon-theme:"Luv";
+    click-to-exit: true;
+    kb-cancel:"d";
+}
+
+window {
+   background-color:  #141720;
+   width: 55%;
+   padding: 3px 3px 2px 3px;
+   children: [ listview ];
+   height:26px;
+   border-radius:12px 12px 12px 12px;
+   anchor: south;
+   location:north;
+   x-offset: 4.1%;
+   y-offset: 3.1%;
+}
+
+mainbox {
+    border:  0px;
+}
+inputbar {
+    enabled: false;
+}
+message {
+    enabled: false;
+}
+textbox {
+    enabled: false;
+}
+listview {
+    columns: 4;
+    lines: 1;
+    background-color:               #141720;
+    padding:                        0px 2px  0px 2px;
+    spacing:                        14px;
+  
+}
+
+
+element {
+    background-color:               #141720;
+    text-color:                     #808080;
+    orientation:                    horizontal;
+    border-radius:                  8px;
+    font:			    "Kenyan Coffee Rg 12";
+    padding:0px 7px 0px 16px;
+}
+
+element selected {
+    background-color:                #476b6b ;
+    text-color:                      #141720;
+    border:                  		0px;
+    border-radius:                 8px;
+   
+}
+
+
+element normal.active {
+    background-color: #52527a;
+    text-color:       #141720;
+}
+
+
+
+
